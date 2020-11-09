@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Proyecto NodeSend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start" : "node ./index.js"
+  },
+  "author": "Ivan Mercedes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
