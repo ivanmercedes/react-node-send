@@ -8,7 +8,7 @@ const CrearCuenta = () => {
 
     // Aceder al state
     const AuthContext = useContext(authContext);
-    const { usuarioAutenticado, token } = AuthContext;
+    const { registrarUsuario } = AuthContext;
 
     // useEffect(()=>{
     //     setTimeout(() => {
@@ -35,7 +35,7 @@ const CrearCuenta = () => {
 
         }),
         onSubmit: valores =>{
-            console.log(valores);
+            registrarUsuario(valores);
         }
     });
 
