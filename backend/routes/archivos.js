@@ -10,9 +10,8 @@ router.post('/',
     archivosController.subirArchivo
 );
 
-// router.delete('/:id',
-//     archivosController.eliminarArchivo
-// );
-
-
+router.get('/:archivo',
+    archivosController.descargar,
+    archivosController.eliminarArchivo
+)
 module.exports = router;
